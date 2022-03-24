@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'grocery-shopping-list-app';
+
+  loadedFeature: string = 'recipe';
+
+  onNavigate(feature: string){
+
+    this.loadedFeature = feature;
+    
+  }
+
+
 }
